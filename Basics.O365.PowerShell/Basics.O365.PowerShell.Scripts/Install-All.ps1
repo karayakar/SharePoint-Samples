@@ -1,9 +1,18 @@
-<#	
-	Remote provisioning engine for a SharePoint Online site collection. XML definition used is based on PnP Schema definition.
-
-	PREREQUISITE: You must install the PnP Cmdlet in order for this script to work properly.
-				  https://github.com/OfficeDev/PnP-PowerShell/blob/master/Binaries/PnPPowerShellCommands16.msi?raw=true
-#>
+# -----------------------------------------
+#.SYNOPSIS
+# Install the solution.
+#
+#.DESCRIPTION
+# This sript uses the remote provisioning engine for a SharePoint Online site collection. XML definition used is based on PnP Schema definition.
+# PREREQUISITE: You must install the PnP Cmdlet in order for this script to work properly.
+#				  https://github.com/OfficeDev/PnP-PowerShell/blob/master/Binaries/PnPPowerShellCommands16.msi?raw=true
+#
+# 1) Creates the O365 Site Collection if it does not already exist.
+# 2) Provision configurations and artifacts to the site collection.
+# 3) Output a timestamped log file. 
+#
+#.PARAMETER TokensFilePath
+# The relative or full path of the tokens file to use. Default: ".\Tokens\Tokens.$([System.Net.Dns]::GetHostName()).xml"
 
 Param
 (

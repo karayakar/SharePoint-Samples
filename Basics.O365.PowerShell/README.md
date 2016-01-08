@@ -19,6 +19,7 @@ Basics.O365.PowerShell | Edouard Shaar
 Version  | Date | Comments
 ---------| -----| --------
 1.0  | January 8th 2016 | Initial release
+1.1  | January 8th 2016 | Added documentation for the ps1 files.
 
 ### Disclaimer ###
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**

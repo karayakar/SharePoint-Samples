@@ -1,9 +1,14 @@
-﻿<#	
-	Remote provisioning engine for a SharePoint Online site collection. XML definition used is based on PnP Schema definition.
-
-	PREREQUISITE: You must install the PnP Cmdlet in order for this script to work properly.
-				  https://github.com/OfficeDev/PnP-PowerShell/blob/master/Binaries/PnPPowerShellCommands16.msi?raw=true
-#>
+﻿# -----------------------------------------
+#.SYNOPSIS
+# Provision configurations and artifacts to a site collection.
+#
+#.DESCRIPTION
+# This sript uses the remote provisioning engine for a SharePoint Online site collection. XML definition used is based on PnP Schema definition.
+# PREREQUISITE: You must install the PnP Cmdlet in order for this script to work properly.
+#				  https://github.com/OfficeDev/PnP-PowerShell/blob/master/Binaries/PnPPowerShellCommands16.msi?raw=true
+#
+#.PARAMETER Tokens
+# The contents of a tokens file as an xml object. ex.: $tokens = [xml](Get-Content $tokensFileFullPath)
 Param
 (
 	[Parameter(Mandatory=$true)]
